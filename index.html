@@ -4,9 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>user make a card with input value</title>
+    
     <link rel="stylesheet" href="./Asset/CSS/style.css">
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
+    <div class="container">
+        <div class="form_conatiner">
+            <form id="form">
+                <div class="header">
+                    make a Product card 
+                </div>
+                <!-- title input type -->
+                <div class="title_main">
+                    <label for="title">Enter Your Product Title :-</label><br>
+                   <div class="input_title">
+                    <input type="text" class="title" id="title">
+                   </div>
+                </div>
+
+               <!-- img input type -->
+                <div class="title_main">
+                    <label>Enter Your Img URL:-</label><br>
+                   <div class="input_title">
+                    <input type="text" class="title" id="img_url" >
+                   </div>
+                </div>
+
+                <!-- price input type -->
+                <div class="title_main">
+                    <label>Enter Your Price :-</label><br>
+                   <div class="input_title">
+                    <input type="number" class="title" id="price" >
+                   </div>
+                </div>
+                 <!-- link input type -->
+                <div class="title_main">
+                    <label>Enter Your Page Link:-</label><br>
+                   <div class="input_title">
+                    <input type="text" class="title" id="page_link" >
+                   </div>
+                </div>
+
+                 <!-- Description input type -->
+                 <div class="title_main">
+                    <label>Enter Your Product Description:-</label><br>
+                   <div class="input_title">
+                    <input type="text" class="title" id="Description" >
+                   </div>
+                </div>
+
+                <div class="submit_button">
+                    <button type="submit" id="button">Submit</button>
+                </div>
+
+            </form>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <div class="product_img_main">
+                <img src="./Asset/IMAGE/5b081a59e5575d9198abd0f690c09e64_o2_featured_v2.avif" alt="product_img" class="product_img">
+                <div class="star">
+                    <i class="fa-solid fa-star" onclick="colorchange()" id="icon"></i>
+                </div>
+            </div>
+
+            <div class="product_name">Morning Set</div>
+            <div class="product_datails">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem pariatur porro minima praesentium quo recusandae rerum eaque, animi aliquid quas. Minima aliquam ducimus ipsum accusantium autem perspiciatis repellat unde veniam?
+            </div>
+
+            <div class="price_and_buy">
+                <div class="price">Rs.500</div>
+                <div class="buy_button">
+                    <button> <a href="#" target="_blank"> Make an Order <i class="fa-solid fa-chevron-right" style="color: #ffffff; margin-left: 4px;"></i></a></button>
+
+                </div>
+
+            </div>
+
+
+          
+            
+        </div>
+    </div>
     
     <script src="./Asset/JS/script.js"></script>
 </body>
